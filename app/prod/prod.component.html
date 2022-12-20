@@ -1,0 +1,37 @@
+
+<div class="container">
+  <div class="row justify-content-center" >
+      <div class="col-md-6 text-left rounded shadow py-5 ">
+<table class="table table-striped" style="width: 500px;" >
+    <thead>
+    <tr>
+        <th>Image</th>
+        <th>Product Name</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Action</th>
+        <th>Edit</th>
+
+    </tr>
+   
+    </thead>
+    
+    <tbody>
+      <tr *ngFor="let ob of productlist">
+        <td><img src="{{ob.product_image}}"/></td>
+        <td>{{ob.product_name}}</td>
+        <td>{{ob.product_categoury}}</td>
+        <td>{{ob.price}}</td>
+        <td><button type="button" class="btn btn-danger" (click)="deleteData(ob.id)">X</button></td>
+        <td><a  routerLink="/updateprod/{{ob.id}}"><button type="button" class="btn btn-success">Edit</button></a></td>
+
+        </tr>
+
+    </tbody>
+  </table>
+  </div>
+  </div>
+  </div>
+
+  
+  

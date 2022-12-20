@@ -1,0 +1,46 @@
+
+<div class="container">
+    <div class="row justify-content-center" >
+        <div class="col-md-6 text-left rounded shadow py-5 ">
+            <form [formGroup]="myReactiveForm" (ngSubmit)="OnSubmit(myReactiveForm.value)">
+                <h2><strong>Update Product</strong></h2>
+          
+                <label for="product_name">product_name : </label> 
+                <input type="text" 
+                class="form-control" 
+                formControlName="product_name" 
+                id="product_name"
+                ngModel="{{prodData?.product_name}}">
+
+                <label for="product_image">product_image : </label> 
+                <input
+                class="form-control" 
+                formControlName="product_image" 
+                id="product_image"
+                ngModel="{{prodData?.product_image}}">
+               
+                <label for="product_categoury">product_categoury : </label> 
+                <input type="text" 
+                class="form-control" 
+                formControlName="product_categoury" 
+                id="product_categoury"
+                ngModel="{{prodData?.product_categoury}}">
+
+                <label for="price">price : </label> 
+                <input type="text" 
+                class="form-control" 
+                formControlName="price" 
+                id="price"
+                ngModel="{{prodData?.price}}">
+
+                <span>
+                    <button type="submit" class="btn btn-primary mt-3" style="margin-left:5px;">Update</button>
+                </span>
+
+               
+
+            </form>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "product_name": "bookk",
+      "product_image": "https://media.istockphoto.com/id/1334372779/photo/open-book-and-steaming-cup-of-coffee-on-wooden-table.jpg?s=1024x1024&w=is&k=20&c=KGnVZnhWROIltQcYnBj5gPOO9ZGkj_A75x9ee93WWNA=",
+      "product_categoury": "test",
+      "price": "8000",
+      "id": 1
+    },
+    {
+      "product_name": "book",
+      "product_image": "https://thumbs.dreamstime.com/z/closed-book-chamomile-grass-red-green-lawn-small-depth-field-56950385.jpg",
+      "product_categoury": "test",
+      "price": "17000",
+      "id": 2
+    }
+  ]
+}
